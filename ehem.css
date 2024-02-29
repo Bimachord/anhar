@@ -7,11 +7,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 600px; /* Sesuaikan dengan lebar layar yang diinginkan */
+  margin: auto;
+  padding: 20px;
   justify-content: center;
   align-items: center; 
   height: 100vh;
   background-color: lightslategrey;
 }
+@media screen and (max-width: 600px) {
 .conten2 {
   background-color: black;
   width: 300px;

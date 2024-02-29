@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href='ehem.css' />
+  <title>ehem</title>
+</head>
+<body>
+  <div class="conten1">
+    <div class="conten2">
+      <div class="conten4" id="text-container1"></div>
+      <div class="image1">
+        <video id="video" autoplay style="width: 300px; height: 230px;"></video>
+      </div>
+    </div>
+    <a class="conten5" href="halaman5.html">Next</a>
+  </div>
+  
+  <script>
+  const text = "Tapi aku hanya ingin Bersama";
+const container = document.getElementById('text-container1');
+
+function showTextOneByOne(text, index) {
+  if (index < text.length) {
+    container.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(() => {
+      showTextOneByOne(text, index);
+    }, 200); // Ubah nilai delay sesuai keinginan Anda
+  }
+}
+
+showTextOneByOne(text, 0);
+  
+  
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: 'user' } })
+  .then(function(stream) {
+    var video = document.getElementById('video');
+    video.srcObject = stream;
+  })
+  .catch(function(err) {
+    console.error('Error accessing camera:', err);
+  });
+
+
+  </script>
+</body>
+</html>

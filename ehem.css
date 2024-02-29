@@ -1,0 +1,84 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.conten1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh;
+  background-color: lightslategrey;
+}
+.conten2 {
+  background-color: black;
+  width: 300px;
+  height: 50vh;
+  color: white;
+  border-radius: 10px;
+}
+.conten3 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.conten4 {
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 10px;
+  color: greenyellow;
+  font-family: courier;
+  font-size: 20px;
+  text-align: center;
+}
+.conten5 {
+  display: flex;
+  background-color: blue;
+  border-radius: 15px;
+  margin-top: 20px;
+  height: 50px;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+}
+.image2 {
+  text-align: center;
+  margin-top: 5px;
+  width: 150px;
+  animation: loncat 3s infinite;
+}
+.image1 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+@keyframes loncat {
+  0%, 100% {
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(20px)
+  }
+}
+
+.imagehalaman3 {
+  text-align: center;
+  margin-top: 5px;
+  width: 150px;
+}
+
+.imagehalaman6 {
+  text-align: center;
+  margin-top: 5px;
+  width: 200px;
+}
+
+.imagehalaman8 {
+  text-align: center;
+  margin-top: 5px;
+  width: 150px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href='ehem.css' />
+  <title>ehem</title>
+</head>
+<body>
+  <div class="conten1">
+    <div class="conten2">
+      <div class="conten3"></div>
+      <div class="conten4" id="text-container"></div>
+    </div>
+    <a class="conten5" href="halaman6.html">Next</a>
+  </div>
+  
+  <script>
+  const text = "Aku sering berbohong, tapi aku harus berkata jujur hari ini..";
+const container = document.getElementById('text-container');
+
+function showTextOneByOne(text, index) {
+  if (index < text.length) {
+    container.innerHTML += text.charAt(index);
+    index++;
+    setTimeout(() => {
+      showTextOneByOne(text, index);
+    }, 200); // Ubah nilai delay sesuai keinginan Anda
+  }
+}
+
+showTextOneByOne(text, 0);
+
+  </script>
+</body>
+</html>

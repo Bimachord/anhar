@@ -16,7 +16,7 @@
   overflow: auto;
   background-color: black;
   width: 85%;
-  height: 85vh;
+  height: 60vh;
   color: white;
   border-radius: 10px;
 }
@@ -40,12 +40,13 @@
   background-color: blue;
   border-radius: 15px;
   margin-top: 20px;
-  height: 50px;
-  width: 100px;
+  height: 250px;
+  width: 300px;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   color: white;
+  font-size: 40px;
 }
 .image2 {
   text-align: center;

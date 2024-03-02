@@ -13,6 +13,7 @@
   background-color: lightslategrey;
 }
 .conten2 {
+  overflow: auto;
   background-color: black;
   width: 85%;
   height: 85vh;
